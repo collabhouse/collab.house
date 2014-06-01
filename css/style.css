@@ -154,6 +154,7 @@ a:hover{
 .page-inner{
 	min-height: 500px;
 	width: 80%;
+	max-width: 1400px;
 	text-align: center;
 	margin: 0 auto;
 }
@@ -286,7 +287,9 @@ a:hover{
 	}
 }
 @media(max-width: 560px){
-	.page-inner
+	.page-inner{
+		width: 98%;
+	}
 	.feature-list{
 		width: 100%;
 	}

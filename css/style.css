@@ -49,6 +49,15 @@ input, select, textarea {
 small{
 	font-size: 12px;
 }
+a{
+	text-decoration: none;
+	color:#000;
+	border-bottom: 1px solid #c9c9c9;
+}
+a:hover{
+	color: #ff9708;
+	border-bottom-color: #ff9708;
+}
 /* Container centralizing */
 
 #container{
@@ -94,7 +103,7 @@ small{
 	margin-top: 15px;
 }
 
-.main-links a{
+.main-links a , .signup-form input{
 	border: 3px solid #000;
 	color: #000;
 	letter-spacing: 3px;
@@ -111,17 +120,18 @@ small{
 	background-color: #90c67c;
 	box-shadow: 5px 5px 0 #000;	
 	position: relative;
+	cursor: pointer;
 }
 
 .main-links .orange{
 	background-color: #ff9708;
 }
-.main-links a:hover{
+.main-links a:hover , .signup-form input[type="submit"]:hover{
 	top:3px;
 	left: 3px;
 	box-shadow: 2px 2px 0 #000;	
 }
-.main-links a:active{
+.main-links a:active, .signup-form input[type="submit"]:active{
 	top:5px;
 	left: 5px;
 	box-shadow: inner 2px 0px 0 #000;	
@@ -223,4 +233,37 @@ small{
 	width: 49%;
 	vertical-align: center;
 	box-shadow: none;
+}
+
+.signup-form{
+	width: 90%;
+	max-width: 500px;
+	margin: 3em  auto;
+	color: #000;
+	text-align: center;
+	position: relative;
+}
+
+.signup-form input{ 
+	
+	letter-spacing: 3px;
+	display: inline-block;
+	font-size: 18px;
+	height: 55px;
+	line-height: 50px;
+	margin-left: 20px;
+	width: 280px;
+}
+
+.signup-form input[type="email"]{
+	cursor: text;
+	background: #fff;
+}
+
+.signup-form p{
+	margin-bottom: 20px;
+}
+
+.signup-form input[type="submit"]{
+	width: 150px;
 }

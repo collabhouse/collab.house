@@ -1,29 +1,114 @@
 <!DOCTYPE html>
 <head>
-	<title>Index Home</title>
+	<title>Collab House</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript">
+
+	function sign_up_show(){
+		$("#signup").animate({bottom:'0px'},700);
+	}
+	function sign_up_close(){
+		$("#signup").animate({bottom:'-280px'},700);
+	}
+	</script>
 </head>
 
 <body>
 	<div id="container">
 		<div class="container-inner">
 			<div class="content">
-				<h1 class="main-heaeding">COLLAB HOUSE</h1>
+				<h1 class="main-heading">COLLAB HOUSE</h1>
 				<div class="main-desc"><p>Collab House is place where individuals and organizations grow their skills, buisness, in a collabrative, community backed environment.</p></div>
 				<ul class="main-links">
-					<li><a href="#">Sign up</a></li>
-					<li><a href="#">Learn More</a></li>
+					<li><a href="javascript:sign_up_show();" class="orange">Shedule a Visit</a></li>
+					<li><a href="#">Membership</a></li>
 				</ul>
+				<p>Hyderabad | Banglore </p>
 			</div>
 		</div><!-- end of class="container-inner" -->
 	</div><!-- end of id="container" -->
-	<div id="signup">
-			<form action="" class="signup-form">
-				<legend>Enter your E-mail and you are done.</legend>
-				<input type="email" placeholder="name@example.com">
-				<input type="submit" value="SIGN UP">
-				<a class="close">X Close</a>
-			</form>
-	</div>
+	<div id="main-content">
+		<div class="page">
+			<div class="page-inner align-center">
+				<h2 class="page-heading">Let's Collab</h2>
+				<p>We aim to build amazing <strong>community</strong> that we all want to be part of.</p>
+
+				<ul class="feature-list">
+					<li>
+						<h2>Comake</h2>
+						<p>Play with tools, let your creative engine rolling, get hands-on new technologies that are changing the world. Make something you love and collaborate with comakers.</p>
+					</li>
+					<li>
+						<h2>Cowork</h2>
+						<p>Inspiring workspace for individuals and organizations. Cowork with amazing people in a collaborative, supportive environment. Get access to dozens of partnered coworking spaces with the Coworking Visa.</p>
+					</li>
+					<li>
+						<h2>Cohack</h2>
+						<p>Come together to share resources and knowledge to build and make things. Do creative code and hardware hacking.</p>
+					</li>
+					<li>
+						<h2>Cohost</h2>
+						<p>Host events, do meetings, plan community meetups. What else ? Learn more</p>
+					</li>
+				</ul>
+			</div><!-- end of class="page-inner" -->
+		</div><!-- end of page 1-->
+		<div class="page">
+			<div class="page-inner">
+				<h2 class="page-heading align-center">Collab House Membership</h2>
+
+				<ul class="membership-list align-center">
+					<li>
+						<h4>Citizen</h4>
+						<p>Full-Time/Dedicated Desk</p>
+						<p class="price">Rs. 5,000/-</p>
+						<small>per month</small>
+					</li>
+					<li>
+						<h4>Mobile-Pro</h4>
+						<p>Part-Time/Shared Desk</p>
+						<p class="price">Rs. 3,000/-</p>
+						<small>any 15 days/month</small>
+					</li>
+					<li>
+						<h4>Mobile</h4>
+						<p>Flexi-Time</p>
+						<p class="price">Rs. 900/-</p>
+						<small>any 5 days/per month</small>
+					</li>
+					<li>
+						<h4>Day-Pass</h4>
+						<p></p>
+						<p class="price">Rs. 300/-</p>
+						<small>Day Pass</small>
+					</li>
+				</ul>
+				<p>* Two month commitment with momth to month membership thereafter</p>
+				<p>* Members of other coworking/hacker/maker space are allowed to use our space for up to 2 days. Subjected to availability. <br/>
+				     Talk to us at <a href="">hello@collab.house</a>.</p>
+				<p>* Sponsorship available for individuals and startups. </p>
+				<ul class="main-links align-center">
+					<li><a href="#">Host an Event</a></li>
+					<li><a href="javascript:sign_up_show();" class="orange">Shedule a Visit</a></li>
+					<li><a href="#">Membership</a></li>
+				</ul>
+			</div><!-- end of class="page-inner" -->
+		</div><!-- end of page 2 -->
+		<div class="page">
+			<div class="page-inner">
+				<h2 class="page-heading align-center">Reach US</h2>
+				<ul class="contact-location">
+					<li>
+						<h4>Banglore</h4>
+					</li>
+					<li>
+						<h4>Hyderabad</h4>
+					</li>
+				</ul>
+			</div><!-- end of class="page-inner" -->
+		</div><!-- end of page 2 -->
+	</div><!-- end of id="main-content" -->
+	
 </body>

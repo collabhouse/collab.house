@@ -176,7 +176,7 @@ a:hover{
 .feature-list li{
 	display: inline-block;
 	width: 45%;
-	min-width: 300px;
+	min-width: 400px;
 	margin-top:2em;
 	padding: 0 2em;
 	vertical-align: top;
@@ -200,7 +200,8 @@ a:hover{
 	margin-top: 10px;
 	vertical-align: top;
 	box-shadow: 10px 10px 0 #000;
-	margin-left: 15px;
+	margin-left: 20px;
+	margin-top: 20px;
 }
 
 .section-heading{
@@ -222,6 +223,7 @@ a:hover{
 	vertical-align: top;
 	box-shadow: 10px 10px 0 #000;
 	margin-left: 20px;
+	margin-top: 20px;
 }
 
 .contact-location img{
@@ -245,13 +247,13 @@ a:hover{
 }
 
 .signup-form input{ 
-	
 	letter-spacing: 3px;
 	display: inline-block;
 	font-size: 18px;
 	height: 55px;
 	line-height: 50px;
 	margin-left: 20px;
+	margin-top: 20px;
 	width: 280px;
 }
 
@@ -266,4 +268,30 @@ a:hover{
 
 .signup-form input[type="submit"]{
 	width: 150px;
+}
+
+
+/* Custom Res Targets */
+@media(max-width: 900px){
+	#main-content{
+		top:130%;
+	}
+}
+@media(max-width: 700px){
+	#main-content{
+		top:150%;
+	}
+	.page-inner{
+		width: 90%;
+	}
+}
+@media(max-width: 560px){
+	.page-inner
+	.feature-list{
+		width: 100%;
+	}
+ 	.feature-list li{
+ 		width: 90%;
+ 		min-width: 200px;
+ 	}
 }

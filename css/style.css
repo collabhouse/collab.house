@@ -233,7 +233,7 @@ a:hover{
 
 .signup-form{
 	width: 90%;
-	max-width: 500px;
+	max-width: 6;
 	margin: 3em  auto;
 	color: #000;
 	text-align: center;
@@ -248,7 +248,7 @@ a:hover{
 	line-height: 50px;
 	margin-right: 20px;
 	margin-top: 20px;
-	width: 280px;
+	width: 380px;
 }
 
 .signup-form input[type="email"]{
@@ -262,9 +262,58 @@ a:hover{
 }
 
 .signup-form input[type="submit"]{
-	width: 150px;
+	width: 200px;
 }
 
+/* Footer */
+
+.footer{
+	background: #000;
+	color: #fff;
+	padding:2em 0;
+}
+
+.footer .page-inner{
+	min-height: 100px;
+}
+
+.footer a{
+	text-decoration: none;
+	color: #fff;
+	font-weight:bold;
+}
+.footer li{
+	display: inline;
+	margin-right: 15px;
+	float: left;
+}
+
+.ft-right{
+	float: right;
+}
+
+.footer-social li:after{
+	content: "*";
+	color: #fff;
+	padding-left: 5px;
+	position: absolute;
+	top: 0.4rem;
+	font-size: 1.2rem;
+}
+
+.footer-social li:last-child:after, .footer-social li:first-child:after{
+	content: " " ;
+	padding: 0;
+}
+
+.footer-qt{
+	display: block;
+	float: left;
+	margin-top: 2em;
+	font-size: 14px;
+	border-top: 1px solid #fff;
+	padding-top: 1em;
+}
 
 /* Custom Res Targets */
 @media(max-width: 900px){

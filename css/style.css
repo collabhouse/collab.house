@@ -104,21 +104,20 @@ a:hover{
 }
 
 .main-links a , .signup-form input{
-	border: 3px solid #000;
+	border-radius: 2px;
+	border: none;
 	color: #000;
 	letter-spacing: 3px;
 	display: block;
 	font-size: 18px;
-	height: 55px;
+	height: 52px;
 	line-height: 50px;
 	margin: 0px auto;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-weight: bold;
 	width: 250px;
 	background-color: #90c67c;
-	box-shadow: 5px 5px 0 #000;	
 	position: relative;
 	cursor: pointer;
 }
@@ -127,14 +126,9 @@ a:hover{
 	background-color: #ff9708;
 }
 .main-links a:hover , .signup-form input[type="submit"]:hover{
-	top:3px;
-	left: 3px;
-	box-shadow: 2px 2px 0 #000;	
-}
-.main-links a:active, .signup-form input[type="submit"]:active{
-	top:5px;
-	left: 5px;
-	box-shadow: inner 2px 0px 0 #000;	
+	background: #000;
+	color: #fff;
+	border: none;
 }
 
 /* Styles for bottom divs */
@@ -196,18 +190,17 @@ a:hover{
 	display: inline-block;
 	width: 250px;
 	min-height:200px;
-	border: 3px solid #000;
+	border: 1px solid #000;
 	padding: 0 10px;
 	margin-top: 10px;
 	vertical-align: top;
-	box-shadow: 10px 10px 0 #000;
-	margin-right 20px;
+	border-radius: 3px;
 	margin-top: 20px;
 }
 
 .section-heading{
 	padding-bottom: 5px;
-	border-bottom: 7px solid #282829; 
+	border-bottom: 3px solid #282829; 
 }
 
 .membership-list .price{
@@ -222,7 +215,6 @@ a:hover{
 	padding:0;
 	margin-top: 10px;
 	vertical-align: top;
-	box-shadow: 10px 10px 0 #000;
 	margin-right: 20px;
 	margin-top: 20px;
 }
@@ -261,6 +253,7 @@ a:hover{
 .signup-form input[type="email"]{
 	cursor: text;
 	background: #fff;
+	border: 1px solid #000;
 }
 
 .signup-form p{

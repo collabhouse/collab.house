@@ -58,6 +58,14 @@ a:hover{
 	color: #ff9708;
 	border-bottom-color: #ff9708;
 }
+
+.un-list{
+	padding-left: 2em;
+}
+
+.un-list li{
+	list-style: disc;
+}
 /* Container centralizing */
 
 #container{

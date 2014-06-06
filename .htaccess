@@ -1,0 +1,31 @@
+
+###removes .php###
+##################
+RewriteEngine On
+RewriteCond %{THE_REQUEST} ^[A-Z]+\ /([^/]+/)*[^.#?\ ]+\.html([#?][^\ ]*)?\ HTTP/
+RewriteRule ^(([^/]+/)*[^.]+)\.html http://collab.house/$1 [R=301,L]
+
+### Redirects index to root ###
+###############################
+RewriteEngine On
+RewriteRule ^(.*)index.html$ http://collab.house/$1 [R=301,L]
+
+
+
+###WWW to no WWW###
+###################
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+
+#Blocks Perl access to server
+SetEnvIfNoCase User-Agent "^libwww-perl*" block_bad_bots
+Deny from env=block_bad_bots
+
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+
+deny from 146.0.74.205

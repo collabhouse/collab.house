@@ -101,14 +101,20 @@ a:hover{
 	margin-top: 50px;
 }
 
-.main-links{
+.main-links, .logo-links {
 	margin-top: 10px;
 }
 
-.main-links li{
+.main-links li ,.logo-links li{
 	display: inline-block;
 	margin-right: 20px;
 	margin-top: 15px;
+}
+
+.logo-links li{
+	max-width: 200px;
+	width: 30%;
+	vertical-align: middle;
 }
 
 .main-links a , .signup-form input{

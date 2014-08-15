@@ -125,19 +125,28 @@ a:hover{
 	color: #000;
 	letter-spacing: 3px;
 	display: block;
-	font-size: 18px;
+	font-size: 16px;
 	height: 52px;
 	line-height: 50px;
 	margin: 0px auto;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
-	width: 250px;
+	width: 260px;
 	background-color: #90c67c;
 	position: relative;
 	cursor: pointer;
 }
 
+.main-links a .hover{
+	display: none;
+}
+.main-links a:hover .normal{
+	display: none;
+}
+.main-links a:hover .hover{
+	display: block;
+}
 .main-links .orange{
 	background-color: #ff9708;
 }
